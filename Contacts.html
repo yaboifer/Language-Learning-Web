@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #4d4c4c;
+            background-image: url("bg\ 5.jpg");
+            background-position: center ;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            color: rgb(34, 34, 34);
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 40px;
+
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.753);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .contact-item {
+            background-color: #fafafa;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            transition: background-color 0.3s ease;
+        }
+        .contact-item h3 {
+            margin: 0;
+            font-size: 22px;
+            color: #333;
+        }
+        .contact-item p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .navbar {
+        background-color: #ffffff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        }
+
+        .nav-menu {
+        list-style: none;
+        display: flex;
+        justify-content: right;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-menu li {
+        display: inline;
+    }
+
+    .nav-menu li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 8px 15px;
+        border-radius: 20px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav-menu li a:hover {
+        background-color: #00b4d8;
+        color: white;
+    }
+    footer {
+            background-color: #0076b6a6;
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            font-size: 16px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <a href="Homepage.html">
+               <img src="Logo.png" alt="Language Learning Courses Logo" style="height: 50px;">
+           </a>
+        <ul class="nav-menu">
+            <li><a href="course.html">Courses</a>
+            <li><a href="Contacts.html">Contacts</a></li>
+            <li><a href="Learn.html">Learn Why?</a></li>
+        </ul>
+    </nav>
+    <header>
+    </header>
+
+    <div class="container">
+        <ul class="contact-list">
+            <li class="contact-item">
+                <center><h1>Contacts Us</h1></center>
+                <br>
+                <h4><strong>Email:</strong> EverydayLingo@gmail.com</h4>
+                <h4><strong>Phone Number:</strong> 0958-562-5963</h4>
+                <h4><strong>Telephone Number:</strong> 011-562-4356</h4>
+                <h4><strong>Address:</strong> Cagayan de Oro City, Philippines</h>
+            </li>
+
+    </div>
+    <footer>
+        <p>&copy; 2025 Everyday Lingo. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+

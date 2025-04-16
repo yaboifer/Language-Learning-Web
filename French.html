@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French for Beginners</title>
+
+    <style>
+        body {
+            font-family: 'Meiryo', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url("bg 1.png") no-repeat fixed;
+            background-size:cover;
+            color: #333;
+        }
+        header {
+            background-color: #ff292900;
+            color: rgb(255, 255, 255);
+            padding: 15px 0;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.884);
+            text-align: center;
+            font-size: 32px;
+        }
+        main {
+            background-color: rgba(255, 255, 255, 0.9); 
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 50px auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color:#021b50c5;
+            color: white;
+            font-size: 14px;
+        }
+        .phrase {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-left: 5px solid #ff2929;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        .audio-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .playback-rate {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        audio {
+            margin-top: 10px;
+        }
+
+        h2, h3 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-menu li {
+            display: inline;
+        }
+
+        .nav-menu li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-menu li a:hover {
+        background-color: #00b4d8;
+        color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+             <a href="Homepage.html">
+                <img src="Logo.png" alt="Language Learning Courses Logo" style="height: 50px;">
+            </a>
+        <ul class="nav-menu">
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="Contacts.html">Contacts</a></li>
+            <li><a href="Learn.html">Learn Why?</a></li>
+            </ul>
+    </nav>
+    <header>
+        <h1>French for Beginners</h1>
+    </header>
+
+    <main>
+        <center><h1>Welcome to French for Beginners!</h1></center>
+        <p>This webpage is designed for beginners who want to learn essential French phrases. You will find common phrases with audio that you can practice. Click the audio buttons to hear the correct pronunciation!</p>
+
+        <h3>Common Phrases:</h3>
+
+        <div class="phrase">
+            <p><strong>1. Bonjour</strong> - Hello / Good day (formal/informal)</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="C:\Users\user\Downloads\Language Learning Web\French\Bonjour.mp3" type="audio/mp3">
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="phrase">
+            <p><strong>2. Merci</strong> - Thank you</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="C:\Users\user\Downloads\Language Learning Web\French\Merci.mp3" type="audio/mp3">
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="phrase">
+            <p><strong>3. Au revoir</strong> - Goodbye</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="C:\Users\user\Downloads\Language Learning Web\French\Au revoir.mp3" type="audio/mp3">
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="phrase">
+            <p><strong>4. Je suis désolé</strong> - I am sorry</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="C:\Users\user\Downloads\Language Learning Web\French\Je suis désolé.mp3" type="audio/mp3">
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="phrase">
+            <p><strong>5. Oui</strong> - Yes</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="C:\Users\user\Downloads\Language Learning Web\French\Oui.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="phrase">
+            <p><strong>6. Non</strong> - No</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="C:\Users\user\Downloads\Language Learning Web\French\Non.mp3" type="audio/mp3">
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="phrase">
+            <p><strong>7. Bonsoir</strong> - Good evening</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="C:\Users\user\Downloads\Language Learning Web\French\Bonsoir.mp3" type="audio/mp3">
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="phrase">
+            <p><strong>8. Enhante</strong> - Nice to meet you</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="C:\Users\user\Downloads\Language Learning Web\French\Enchante.mp3" type="audio/mp3">
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="phrase">
+            <p><strong>9. Je m'appelle</strong> - My name is...</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="C:\Users\user\Downloads\Language Learning Web\French\Je m'appelle.mp3" type="audio/mp3">
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="phrase">
+            <p><strong>10. Je ne comprends pas</strong> - I don' t understand</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="C:\Users\user\Downloads\Language Learning Web\French\Je ne comprends pas.mp3" type="audio/mp3">
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <h3>Pronunciation Tips:</h3>
+        <p>Learning how to pronounce French words can feel tricky at first, but with practice and some tips you'll start sounding more natural in no time.</p>
+        <ul>
+            <li><strong>R sounds</strong>: The 'r' in french comes from the back of the throat, rather than the front like in English pronunciation.</li>
+            <br>
+            <li><strong>Silent Letters</strong> Final consonants are often silent: petit, grand, fils.</li>
+            <br>
+            <li><strong>Nasals (on, an, in, un, en)</strong> Don't pronounce the “n” fully—let the sound go through your nose.</li>
+            <ul>
+                <br>
+                <li>"on" like in bon → nasalized "aw"</li>
+                <li>"an" / "en" like in maman → nasal "ah"</li>
+                <li>"in" / "ain" / "un" like in vin or pain → nasal "eh" or "uh"</li>
+            </ul>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 French for Beginners. All rights reserved.</p>
+    </footer>
+</body>
+</html>

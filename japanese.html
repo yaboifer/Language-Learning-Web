@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese for Beginners</title>
+
+    <style>
+        body {
+            font-family: 'Meiryo', Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background: url("bg 1.png") no-repeat fixed;
+            background-size:cover;
+            color: #333;
+        }
+        header {
+            background-color: rgba(0, 102, 255, 0); 
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 32px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        main {
+            background-color: rgba(255, 255, 255, 0.9); 
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 50px auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: rgba(0, 102, 255, 0.8);
+            color: white;
+            font-size: 14px;
+        }
+        .phrase {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-left: 5px solid #cd3732e0;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        .audio-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .playback-rate label {
+            font-size: 14px;
+            margin-right: 5px;
+        }
+        audio {
+            margin-top: 10px;
+        }
+
+        h2, h3 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            justify-content: right;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-menu li {
+            display: inline;
+        }
+
+        .nav-menu li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-menu li a:hover {
+        background-color: #00b4d8;
+        color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <a href="Homepage.html">
+               <img src="Logo.png" alt="Language Learning Courses Logo" style="height: 50px;">
+           </a>
+        <ul class="nav-menu">
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="Contacts.html">Contacts</a></li>
+            <li><a href="Learn.html">Learn Why?</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Japanese for Beginners</h1>
+    </header>
+
+    <main>
+        <center><h1>Welcome to Japanese for Beginners!</h1></center>
+        <p>This webpage is designed for beginners who want to learn essential Japanese phrases. You will find common phrases with audio that you can practice. Click the audio buttons to hear the correct pronunciation!</p>
+
+        <h3>Common Phrases:</h3>
+
+        <div class="phrase">
+            <p><strong>1. こんにちは (Konnichiwa)</strong> - Hello / Good afternoon</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="https://translate.google.com/translate_tts?ie=UTF-8&q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%82%8F&tl=ja&total=1&idx=0&textlen=6&client=tw-ob" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="phrase">
+            <p><strong>2. お元気ですか? (Ogenki desu ka?)</strong> - How are you?</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="https://translate.google.com/translate_tts?ie=UTF-8&q=%E3%81%8A%E5%85%83%E6%B0%97%E3%81%A7%E3%81%99%E3%81%8B%3F&tl=ja&total=1&idx=0&textlen=18&client=tw-ob" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="phrase">
+            <p><strong>3. ありがとう (Arigatou)</strong> - Thank you</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="https://translate.google.com/translate_tts?ie=UTF-8&q=%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86&tl=ja&total=1&idx=0&textlen=9&client=tw-ob" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="phrase">
+            <p><strong>4. おはようございます (Ohayou gozaimasu)</strong> - Good morning</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="https://translate.google.com/translate_tts?ie=UTF-8&q=%E3%81%8A%E3%81%AF%E3%82%88%E3%81%86%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%99&tl=ja&total=1&idx=0&textlen=15&client=tw-ob" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="phrase">
+            <p><strong>5. さようなら (Sayounara)</strong> - Goodbye</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="https://translate.google.com/translate_tts?ie=UTF-8&q=%E3%81%95%E3%82%88%E3%81%86%E3%81%AA%E3%82%89&tl=ja&total=1&idx=0&textlen=7&client=tw-ob" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="phrase">
+            <p><strong>6. お願いします (Onegaishimasu)</strong> - Please</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="https://translate.google.com/translate_tts?ie=UTF-8&q=%E3%81%8A%E9%A1%98%E3%81%84%E3%81%97%E3%81%BE%E3%81%99&tl=ja&total=1&idx=0&textlen=9&client=tw-ob" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="phrase">
+            <p><strong>7. はじめまして (Hajimemashite)</strong> - Nice to meet you</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="https://translate.google.com/translate_tts?ie=UTF-8&q=%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%A6&tl=ja&total=1&idx=0&textlen=11&client=tw-ob" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="phrase">
+            <p><strong>8. ありがとうございます (Arigatou gozaimasu)</strong> - Thank you very much</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="https://translate.google.com/translate_tts?ie=UTF-8&q=%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%99&tl=ja&total=1&idx=0&textlen=15&client=tw-ob" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="phrase">
+            <p><strong>9. すみません (Sumimasen)</strong> - Excuse me / I'm sorry</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="https://translate.google.com/translate_tts?ie=UTF-8&q=%E3%81%99%E3%81%BF%E3%81%BE%E3%81%9B%E3%82%93&tl=ja&total=1&idx=0&textlen=10&client=tw-ob" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="phrase">
+            <p><strong>10. トイレはどこですか? (Toire wa doko desu ka?)</strong> - Where is the bathroom?</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="https://translate.google.com/translate_tts?ie=UTF-8&q=%E3%83%88%E3%82%A4%E3%83%AC%E3%81%AF%E3%81%A9%E3%81%93%E3%81%A7%E3%81%99%E3%81%8B%3F&tl=ja&total=1&idx=0&textlen=19&client=tw-ob" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="playback-rate">
+                    <label for="playbackRate">Playback Rate:</label>
+                    <select id="playbackRate" onchange="this.previousElementSibling.playbackRate = this.value">
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <h3>Pronunciation Tips:</h3>
+        <p>Japanese pronunciation is relatively straightforward, with each syllable being pronounced clearly. Here are some tips:</p>
+        <ul>
+            <li><strong>Vowels</strong>: In Japanese, vowels are pronounced as follows</li>
+            <br>
+                    <li>あ (a) = "ah"</li>
+                    <li>い (i) = "ee"</li>
+                    <li>う (u) = "oo"</li>
+                    <li>え (e) = "eh"</li>
+                    <li>お (o) = "oh"</li>
+                </ul>
+            </li>
+            <br>
+            <li><strong>Double consonants</strong> (e.g., っ in こんにちは) are pronounced with a slight pause before the next sound.</li>
+            <br>
+            <li><strong>The "r" sound</strong> is softer and rolled in Japanese, similar to a combination of an "l" and "r".</li>
+            <br>
+            <li><strong>Pitch accent</strong>: Japanese has pitch accent, meaning the tone of a syllable can change the meaning of the word. For example, はし (hashi) with a high tone means "chopsticks," while with a low tone, it means "bridge".</li>
+            <br>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Japanese for Beginners. All rights reserved.</p>
+    </footer>
+</body>
+</html>
